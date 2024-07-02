@@ -18,15 +18,15 @@ public class Song {
         return (title + ": " + duration);
     }
 
-//    @Override
-//    public boolean equals(Object otherObject) {
-//        if (this == otherObject)
-//            return true;
-//        if (otherObject == null)
-//            return false;
-//        if (getClass() != otherObject.getClass())
-//            return false;
-//        Song other = (Song) otherObject;
-//        return Objects.equals(title, other.title) && (duration == other.duration);
-//    }
+    @Override
+    public boolean equals(Object otherObject) {
+        if (this == otherObject)
+            return true;
+        if (otherObject == null)
+            return false;
+        if (getClass() != otherObject.getClass())
+            return false;
+        Song other = (Song) otherObject;
+        return Objects.equals(title, other.title) && (duration == other.duration);
+    }
 }
